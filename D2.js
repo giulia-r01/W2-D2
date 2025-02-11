@@ -32,9 +32,9 @@ if (num3 !== num4) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let num5 = 104
+let num5 = 890
 
-if (num5 % 5) {
+if (num5 % 5 === 0) {
   console.log("divisibile per 5")
 }
 
