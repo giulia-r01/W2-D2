@@ -88,9 +88,10 @@ if (totalShoppingCart > 50) {
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 let WithDiscount = (totalShoppingCart * 20) / 100
-console.log("Prezzo con sconto", WithDiscount)
+console.log("Prezzo con sconto", WithDiscount) /*Ho calcolato lo sconto*/
 
-if (WithDiscount > 50) {
+if (totalShoppingCart - WithDiscount > 50) {
+  /*totale meno sconto*/
   console.log(
     "Hai diritto alla spedizione gratuita! Totale del carrello ",
     WithDiscount
@@ -125,7 +126,7 @@ if (num9 > num8 && num8 > num10) {
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 let letter = "Non è un numero"
-console.log(typeof letter)
+console.log(typeof letter) /* da rifare con if else */
 
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
@@ -201,7 +202,8 @@ console.log(me)
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-const numberList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const numberList = []
+numberList.push(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
