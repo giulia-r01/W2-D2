@@ -114,8 +114,8 @@ let num8 = 5
 let num9 = 16
 let num10 = 2
 
-if (num10 < num8 && num9 > num8) {
-  console.log(num10, num8, num9)
+if (num9 > num8 && num8 > num10) {
+  console.log(num9, num8, num10)
 }
 
 /* ESERCIZIO 8
