@@ -4,13 +4,13 @@
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let num1 = 200
-let num2 = 100
+const num1 = 29
+const num2 = 10
 
-if (num1 >= num2) {
-  console.log("la variabile num1 è maggiore di num2")
+if (num1 > num2) {
+  console.log(num1 + " è maggiore di " + num2)
 } else {
-  console.log("La variabile num1 è minore di num2")
+  console.log(num2 + " è maggiore di " + num1)
 }
 
 /* ESERCIZIO 2
@@ -19,11 +19,10 @@ if (num1 >= num2) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let num3 = 5
-let num4 = 4
-
-if (num3 !== num4) {
+if (num2 !== 5) {
   console.log("not equal")
+} else {
+  console.log("equal")
 }
 
 /* ESERCIZIO 3
@@ -32,10 +31,10 @@ if (num3 !== num4) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let num5 = 890
-
-if (num5 % 5 === 0) {
-  console.log("divisibile per 5")
+if (num1 % 5 === 0) {
+  console.log(num1 + " è divisibile per 5")
+} else {
+  console.log(num1 + " non è divisibile per 5")
 }
 
 /* ESERCIZIO 4
@@ -44,19 +43,16 @@ if (num5 % 5 === 0) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let num6 = 8
-let num7 = 2
+const n1 = 10
+const n2 = 7
 
-if (num6 === 8 || num7 === 8) {
-  console.log("Il valore di uno dei due num corrisponde a 8")
-} else if (num6 + num7 === 8) {
-  console.log("La somma dei due numeri corrisponde a 8")
+if (n1 === 8 || n1 + n2 === 8) {
+  console.log(n1 + " è uguale a 8, oppure la somma di n1 + n2 da 8")
+} else if (n2 === 8 || n1 - n2 === 8) {
+  console.log(n2 + " è uguale a 8, oppure la somma di n1 + n2 da 8")
 } else {
-  console.log(
-    "Né uno dei valori, né la somma o sottrazione di entrambi corrispondono a 8"
-  )
+  console.log("nessuna delle condizioni si avvera")
 }
-
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
   C'è una promozione in corso: se il totale del carrello supera 50, l'utente ha diritto alla spedizione gratuita (altrimenti la spedizione ha un costo fisso pari a 10).
@@ -65,18 +61,20 @@ if (num6 === 8 || num7 === 8) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let totalShoppingCart = 450
+const totalShoppingCart = 28
 const shipping = 10
 
 if (totalShoppingCart > 50) {
   console.log(
-    "Hai diritto alla spedizione gratuita! Totale del carrello ",
-    totalShoppingCart
+    "Totale carrello: " +
+      totalShoppingCart +
+      " Hai diritto alla spedizione gratuita"
   )
 } else {
   console.log(
-    "Non hai diritto alla spedizione gratuita. Totale del carrello compreso di spedizione = ",
-    totalShoppingCart + shipping
+    "Totale carrello: " +
+      (totalShoppingCart + shipping) +
+      " Non hai diritto alla spedizione gratuita"
   )
 }
 
@@ -86,20 +84,19 @@ if (totalShoppingCart > 50) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let scount = (totalShoppingCart * 20) / 100
 
-let WithDiscount = (totalShoppingCart * 20) / 100
-console.log("Prezzo con sconto", WithDiscount) /*Ho calcolato lo sconto*/
-
-if (totalShoppingCart - WithDiscount > 50) {
-  /*totale meno sconto*/
+if (totalShoppingCart - scount > 50) {
   console.log(
-    "Hai diritto alla spedizione gratuita! Totale del carrello ",
-    WithDiscount
+    "Totale carrello con sconto del 20% = " +
+      (totalShoppingCart - 0.2) +
+      " Hai diritto alla spedizione gratuita"
   )
 } else {
   console.log(
-    "Non hai diritto alla spedizione gratuita. Totale del carrello compreso di spedizione = ",
-    WithDiscount + shipping
+    "Totale carrello con sconto del 20% = " +
+      (totalShoppingCart - scount) +
+      " Non hai diritto alla spedizione gratuita"
   )
 }
 
@@ -111,12 +108,12 @@ if (totalShoppingCart - WithDiscount > 50) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let num8 = 5
-let num9 = 16
-let num10 = 2
+let number1 = 10
+let number2 = 4
+let number3 = 2
 
-if (num9 > num8 && num8 > num10) {
-  console.log(num9, num8, num10)
+if (number1 > number2 && number2 > number3) {
+  console.log(number1, number2, number3)
 }
 
 /* ESERCIZIO 8
@@ -124,23 +121,21 @@ if (num9 > num8 && num8 > num10) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let str = "ciao"
 
-let letter = "Non è un numero"
-console.log(typeof letter) /* da rifare con if else */
+if (typeof number1 !== typeof str) {
+  console.log(number1 + " Non è una stringa, è un " + typeof number1)
+}
 
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
-
-let num11 = 22
-
-if (22 % 2 === 0) {
-  console.log("22 è un numero pari")
-} else {
-  console.log("22 è un numero dispari")
+if (number2 % 2 === 0) {
+  console.log(number2 + " È un numero pari")
 }
+
+/* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
@@ -157,10 +152,12 @@ if (22 % 2 === 0) {
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 let val = 7
-if (val < 10) {
+if (val < 5) {
+  console.log("Meno di 5")
+} else if (val < 10) {
   console.log("Meno di 10")
 } else {
-  console.log("Meno di 10")
+  console.log("Uguale a 10 o maggiore")
 }
 
 /* ESERCIZIO 11
@@ -174,7 +171,6 @@ const me = {
 }
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
 me.city = "Toronto"
 console.log(me)
 
@@ -183,7 +179,6 @@ console.log(me)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
 delete me.lastName
 console.log(me)
 
@@ -192,8 +187,7 @@ console.log(me)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
-me.skills.splice(2, 1)
+me.skills.pop()
 console.log(me)
 
 /* ESERCIZIO 14
@@ -202,14 +196,14 @@ console.log(me)
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-const numberList = []
-numberList.push(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+const arr = []
+arr.push(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+console.log(arr)
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
-numberList.splice(9, 1, 100)
-console.log(numberList)
+arr[9] = 100
+console.log(arr)
